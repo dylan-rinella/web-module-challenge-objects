@@ -90,7 +90,7 @@ function addnewReview(name, rating, feedback){
   return reviews;
 }
 console.log(addnewReview("Dylan", 1, "I hate vegan food"));
-console.log(reviews[0]);
+console.log(reviews);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -98,7 +98,7 @@ Reyna's feedback is missing! Use what you know to do the following:
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
 */
-
+console.log(reviews[7].feedback = ("this place is chill with really cool people, great for getting work done on weekdays"))
 
 
 
@@ -113,9 +113,10 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(arr, index) {
+  return `${arr[index].name} gave the restaurant a ${arr[index].rating} star review, and their feedback was: ${arr[index].feedback}`
 }
+getReviewByIndex(reviews, 0);
 
 
   
@@ -131,9 +132,10 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
-} 
+function getLastReview(arr) {
+  return `${arr[7].name} gave the restaurant a ${arr[7].rating} star review, and their feedback was: ${arr[7].feedback}`
+}
+getLastReview(reviews);
 
 
 
